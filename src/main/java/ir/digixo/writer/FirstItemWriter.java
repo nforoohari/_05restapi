@@ -10,7 +10,7 @@ public class FirstItemWriter implements ItemWriter<Product> {
 
     @Override
     public void write(Chunk<? extends Product> list) throws Exception {
-        System.out.println("Inside item writer");
+        System.out.println("Inside item writer, Items : ");
         list.getItems().stream().forEach(System.out::println);
     }
 }
